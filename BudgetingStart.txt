@@ -1,0 +1,22 @@
+     System.out.println("Welcome to my Budgeting Program");
+     System.out.println("Please enter the amount you wish to budget: ");
+     Scanner input = new Scanner(System.in);
+     double budgetAmt = input.nextDouble();
+     System.out.println("You have entered: " + budgetAmt);
+     System.out.println("What percentage would you like taken out? ");
+     double percentage = input.nextDouble();
+     
+     percentage = percentage / 100;
+     
+     // calculate percentage of budget.
+     
+     double percent1 = budgetAmt * percentage;
+     System.out.println("That equals " + percent1);
+
+    // calculate the remaining amount.
+    
+    double remain = budgetAmt - percent1;
+    
+    System.out.println("You have " + remain + " left.");
+    
+
